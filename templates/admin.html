@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <title>Instructor Upload</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Upload Course Material</h1>
+        <form action="/admin" method="POST" enctype="multipart/form-data">
+            <input type="file" name="course_file" required>
+            <button type="submit">Upload</button>
+        </form>
+        <p><a href="/dashboard">Back to Dashboard</a></p>
+    </div>
+</body>
+</html>
